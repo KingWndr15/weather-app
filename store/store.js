@@ -25,5 +25,8 @@ export const useWeatherStore = defineStore("cities", {
             this.error = error.message;
         }
     }
-  }
+  },
+  persist: {
+    storage: persistedState.localStorage,
+  },
 });
